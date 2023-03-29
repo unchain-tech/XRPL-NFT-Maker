@@ -1,0 +1,41 @@
+.nft-minter-box {
+  padding: 6rem;
+}
+
+.nft-minter-box > * {
+  margin: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.account-box {
+  margin: 1rem;
+}
+
+.account {
+  margin: 0.8rem;
+}
+
+.image-box {
+  margin: 2rem;
+}
+
+.imageInput {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.nft-image {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
