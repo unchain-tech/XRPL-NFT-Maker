@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import { Xumm } from "xumm";
 import "./index.css";
 
-const xumm = new Xumm('api-key')
+// const xumm = new Xumm('api-key')
 
 export const NftMinter = () => {
   return (
