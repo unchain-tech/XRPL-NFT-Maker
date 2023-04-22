@@ -7,8 +7,8 @@ import { XrplClient } from 'xrpl-client'
 import { NFTStorage } from "nft.storage";
 import { extractAffectedNFT } from "@xrplkit/txmeta";
 
-const xumm = new Xumm(process.env.REACT_APP_XUMM_API_KEY)
-const nftStorage = new NFTStorage({ token: process.env.REACT_APP_NFT_STORAGE_API_KEY, });
+const xumm = new Xumm("c7f46075-0b84-44d1-b445-f9eb7e97f1d3");
+const nftStorage = new NFTStorage({ token: "bafyreichd62ut73agg7juajdmynqvwa7lm7zgkd2qcoiaj36dea2g2yipm", });
 
 export const NftMinter = () => {
   const [account, setAccount] = useState(undefined);
