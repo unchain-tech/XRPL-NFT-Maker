@@ -1,10 +1,43 @@
-# XRP Ledger NFT Starter
+# XRPL NFT Maker
 
-このリポジトリはUNCHAINのXRPL NFT Makerのスターターキットです。
+## 実行方法
 
-## はじめてみよう
+### 1. 本リポジトリのクローン
 
-1. リポジトリをクローンする
-2. `npm install` を実行する
-3. `npm run start` を実行する
-4. コードを書きましょう！
+```bash
+git clone -b complete git@github.com:unchain-tech/XRPL-NFT-Maker.git
+```
+
+### 2. パッケージのインストール
+
+```bash
+npm install
+```
+
+### 3. API キーの設定
+
+`src/components/NftMinter/index.jsx`内の下記の部分に、API キーを設定します。
+
+```javascript
+// Xumm Developer Console](https://apps.xumm.dev)で取得したAPIキーを設定します。
+const xumm = new Xumm('api-key');
+// [NFT.Storage](https://nft.storage)で取得したAPIキーを設定します。
+const nftStorage = new NFTStorage({ token: 'nft-storage-key' });
+```
+
+### 4. 開発サーバーの起動
+
+```bash
+npm start
+```
+
+ターミナル上に表示された URL にアクセスしましょう。
+
+## 設定
+
+### Git Hooks
+
+```
+npm install
+npx simple-git-hook
+```
