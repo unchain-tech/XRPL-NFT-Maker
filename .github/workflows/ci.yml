@@ -19,8 +19,6 @@ jobs:
       - name: Install packages
         if: steps.cache-npm.outputs.cache-hit != 'true'
         run: npm install
-      - name: Install dfx
-        run: sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
 
   check:
     runs-on: ubuntu-latest
