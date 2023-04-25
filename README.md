@@ -32,12 +32,3 @@ npm start
 ```
 
 ターミナル上に表示された URL にアクセスしましょう。
-
-## 設定
-
-### Git Hooks
-
-```
-npm install
-npx simple-git-hook
-```
