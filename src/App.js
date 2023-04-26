@@ -4,7 +4,7 @@ import { NftMinter } from './components/NftMinter';
 function App() {
   return (
     <div className="App">
-      <NftMinter/>
+      <NftMinter />
     </div>
   );
 }
