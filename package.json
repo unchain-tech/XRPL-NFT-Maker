@@ -67,5 +67,17 @@
     "lint-staged": "^13.2.1",
     "prettier": "^2.8.7",
     "simple-git-hooks": "^2.8.1"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!nft.storage)/"
+    ],
+    "moduleNameMapper": {
+      "@xrplkit/xfl": [
+        "<rootDir>/node_modules/@xrplkit/xfl/wrappers/class.js",
+        "<rootDir>/node_modules/@xrplkit/xfl/wrappers/string.js",
+        "<rootDir>/node_modules/@xrplkit/xfl/extras/index.js"
+      ]
+    }
   }
 }
