@@ -19,6 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:all": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -38,5 +39,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!nft.storage)/"
+    ],
+    "moduleNameMapper": {
+      "@xrplkit/xfl": [
+        "<rootDir>/node_modules/@xrplkit/xfl/wrappers/class.js",
+        "<rootDir>/node_modules/@xrplkit/xfl/wrappers/string.js",
+        "<rootDir>/node_modules/@xrplkit/xfl/extras/index.js"
+      ]
+    }
   }
 }

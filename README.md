@@ -1,5 +1,7 @@
 # XRP Ledger NFT Starter
 
+![](/public/learn-banner.png)
+
 このリポジトリはUNCHAINのXRPL NFT Makerのスターターキットです。
 
 ## はじめてみよう
