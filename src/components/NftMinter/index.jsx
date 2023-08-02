@@ -1,5 +1,4 @@
 import { Button } from '@mui/material';
-import { extractAffectedNFT } from '@xrplkit/txmeta';
 import { Buffer } from 'buffer';
 import { NFTStorage } from 'nft.storage';
 import { useEffect, useState } from 'react';
@@ -76,9 +75,9 @@ export const NftMinter = () => {
       transaction: txid,
     });
     // トランザクション情報からNFTの情報を取得します。
-    const nftoken = extractAffectedNFT(txResponse);
+    const nftokenId = txResponse.meta.nftoken_id;
     alert('NFTトークンが発行されました!');
-    window.open(`https://test.bithomp.com/nft/${nftoken.NFTokenID}`, '_blank');
+    window.open(`https://test.bithomp.com/nft/${nftokenId}`, '_blank');
   };
 
   return (
