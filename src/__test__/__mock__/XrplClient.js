@@ -536,6 +536,8 @@ export class XrplClient {
         ],
         TransactionIndex: 8,
         TransactionResult: 'tesSUCCESS',
+        nftoken_id:
+          '000A1EA4511569DD226DFBE9472AC240000FCA5F212289F4DE07D4DC0000008E',
       },
       hash: '9DFB911F8916695710042EEB7BF6D83A987AA5406C7D6DFF5DC0F8B3869788B9',
       ledger_index: 78893311,
