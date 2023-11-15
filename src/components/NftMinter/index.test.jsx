@@ -5,19 +5,20 @@ import { Xumm } from 'xumm';
 
 import { NftMinter } from '.';
 
-jest.mock('nft.storage', () => {
-  const { MockedNFTStorage } = require('../../__test__/__mock__/NFTStorage');
-  return { NFTStorage: MockedNFTStorage };
-});
+// Section2 Lesson2 「📝 NFTのMint処理を実装しよう」が完了した後にコメントアウトを外してください。
+// jest.mock('nft.storage', () => {
+//   const { MockedNFTStorage } = require('../../__test__/__mock__/NFTStorage');
+//   return { NFTStorage: MockedNFTStorage };
+// });
+
+// jest.mock('xrpl-client', () => {
+//   const { XrplClient } = require('../../__test__/__mock__/XrplClient');
+//   return { XrplClient };
+// });
 
 jest.mock('xumm', () => {
   const { MockedXumm } = require('../../__test__/__mock__/Xumm');
   return { Xumm: MockedXumm };
-});
-
-jest.mock('xrpl-client', () => {
-  const { XrplClient } = require('../../__test__/__mock__/XrplClient');
-  return { XrplClient };
 });
 
 beforeEach(() => {
